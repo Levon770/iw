@@ -1,0 +1,314 @@
+/**
+ * styles.css
+ *
+ * @author: antonio ramirez <antonio@clevertech.biz>
+ * Date: 7/23/12
+ * Time: 12:31 AM
+ */
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+body{
+    margin:0; padding:0;
+     font: 'Roboto', sans-serif;
+    /*background:#F6F4F1;*/
+}
+body:lang(am){
+    font-family:  ArianAMURegular, Tahoma Armenian, Arian AMU, Arial AMU;
+}
+ul, li,ul li{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+table tr td{
+    vertical-align: top;
+}
+.content h3{margin-left:55px;}
+.carousel{margin: 0px!important;padding:20px;}
+root {
+    display: block;
+}
+header{
+    background:#73B134;
+    padding:0;
+    height: 170px;
+    width:100%;
+    position:relative;
+    z-index:150;
+}
+footer{
+    background:#DAD8D9;
+    height:125px;
+    width:100%;
+    margin-top:50px;
+}
+.slider{
+     
+}
+.logo{
+    margin: 0px auto;
+    display: table;
+}
+.logo a, .logo a:hover, .logo a:visited{text-decoration: none;color:#fff; font-size:40px;}
+.hint{
+    font-size:11px;
+    }
+
+.wrapper{height:170px;}
+
+
+#modalDiv{
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index: 999;
+    background:url("../img/jbg1.png");
+    opacity:0;
+    top:0;
+}
+.added {
+width: 250px;
+height: 100px;
+background-color: #fff;
+display: block;
+margin: 350px auto;
+border-radius: 10px;
+box-shadow: 0 0 25px #000;
+}
+.added h2 {
+padding: 30px 0 0 0;
+text-align: center;
+}
+
+
+
+.pagination ul>li>a{ color:#424242;}
+.pagination ul>li>a:hover{ color:#B9403E;}
+.pagination ul>.active>a, .pagination ul>.active>span{color:#B9403E;}
+.pagination {float: right;margin-top:-25px;}
+
+
+
+/*-------CONTACT FORM-----------*/
+.row{margin:0;}
+.map{float:left}
+.map img{width:500px;margin:0 auto;padding: 5px;background: #fff;}
+
+#contact-form input[type="text"], .plogin input[type="text"],.plogin input[type="password"],
+#contact-form textarea{
+    width: 440px;
+    padding: 0 15px ;
+    line-height: 16px;
+    color: #878787;
+    margin: 0;
+    height:40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #f0f3f2;
+
+}
+#ContactForm_verifyCode, #RegistrationForm_verifyCode{
+    width:285px!important;
+}
+.form-actions{
+    background:none;
+    float:right;
+}
+
+.form-contanct{
+    width:450px;
+    float:right;
+}
+
+.adress{
+    color:#666;
+    font-size:14px;
+    font-weight:bold;
+    margin-top:45px;
+    padding-top:25px;
+    line-height: 200%;
+    width:100%;
+    border-top:thin solid #666;
+}
+.adress span{display: inline-block;width: 90px;font-weight:normal}
+#content{
+    margin:40px 0;
+}
+
+
+/*----------MAIN MANU--------------*/
+.mainmenu{
+    height:60px;
+    width:100%;
+    /*background-image: url("../img/menu-bg.png");*/
+    background-repeat: repeat-x;
+    position:absolute;
+    bottom:0;
+    z-index: 100;
+}
+.mainmenu ul{
+    position:relative;
+}
+.mainmenu ul li {
+    display:inline-table;
+    margin:0 20px;
+    line-height:60px;
+}
+.mainmenu ul li > ul li{
+    display:block;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.mainmenu ul li:hover > ul li{ 
+    height: 40px;
+    overflow: visible;
+    padding: 0;  
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+.mainmenu ul li > ul { 
+    border-radius:0 0 10px 10px;
+    background: #73B134; 
+    color: #fff; 
+    display:block!important;
+    height: auto; 
+    line-height:20px; 
+    
+}
+
+.mainmenu ul li > ul li{line-height:40px;}
+.mainmenu ul li > ul li a{font-size:13px;}
+.mainmenu ul li a:hover, .mainmenu ul li.active a{
+    color:#252525;
+}
+
+.mainmenu ul li a{
+   color:#fff;
+   text-decoration: none;
+   font-size:17px;
+   font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+font-weight: 300;
+   /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;*/
+   
+}
+.mainmenu ul li a:lang(am){
+    font-size:15px;
+    font-family:  ArianAMURegular, Tahoma Armenian, Arian AMU, Arial AMU;
+}
+
+.mainmenu ul li > ul li a:lang(am){
+    font-size:13px;
+    font-family:  ArianAMURegular, Tahoma Armenian, Arian AMU, Arial AMU;
+}
+
+.prlistview {
+border-radius: 3px;
+border: thin solid #ccc;
+border-bottom: 3px solid #ccc;
+padding:5px;
+width: 310px;
+display: inline-block;
+margin: 15px 7px;
+vertical-align: top;
+background: #fff;
+position: relative;
+}
+.prlistview:hover {
+border-color: #73B134;
+}
+.prlistview img{
+    margin-right:10px;
+}
+.prtitle{
+    font-size:15px;
+    font-weight:bold;
+}
+div.ordericon {color:#555;margin: 5px 0; font-size:13px; margin-left:121px;}
+div.ordericon i{margin: 0 5px!important;}
+.icon-skype{background :url('../img/skype.png');}
+a.partlink, a.partlink:visited{
+    text-decoration: none;
+    color:#151551;
+}
+
+.partnerslists{
+    margin-right:20px;
+border-right: thin dashed #73B134;
+text-align:center;
+}
+
+a.partlink:hover{text-decoration: underline; color:#000;}
+/* DRAWING MEDIA*/
+
+/*    w  > 1200px          */
+@media (min-width: 1200px){
+    
+    .container{
+        width:1150px!important;
+    }
+    
+    
+}
+/*    w > 980px,  w < 1200px  */
+@media (min-width: 981px) and (max-width: 1199px){
+    }
+
+/*    w > 800px,  w < 980px  */
+@media (min-width: 815px) and (max-width: 980px) {
+   
+}    
+/*  w < 800  */
+@media (max-width: 815px){
+    
+    
+}
+
+.carousel-inner {
+width: auto!important;
+display: table!important;
+margin:0 auto;
+}
+
+.carousel-control.right,.carousel-control.left {
+margin-top: 15px;
+}
+
+#content .container{
+    background-color:#fff;
+}
+.content{padding: 0 45px;}
+.mainmenu > .container ul{display: table;margin: 0 auto;}
+
+#language-selector span{color:#a2a2a2;}
+.productlist a, .productlist a:visited{text-decoration:none;color:#333;}
+.productlist a:hover{color:#009B00;}
+.contnetview {margin: 0 auto;
+float: none;
+padding: 15px;
+box-shadow: 0 0 20px #dfdfdf;
+margin-top: 20px;
+border-radius: 20px;
+border: thin solid #f1f1f1;
+}
